@@ -10,10 +10,6 @@
     <div class="container">
       <h2>Currency Converter</h2>
       <form>
-        <div class="amount">
-          <p>Enter Amount</p>
-          <input type="text" value="100" />
-        </div>
         <div class="dropdown">
           <div class="from">
             <p>From</p>
@@ -24,6 +20,7 @@
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
               </select>
+              <input type="text" value="100" />
             </div>
           </div>
           <div class="to">
@@ -35,8 +32,12 @@
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
               </select>
+              <input type="text" />
             </div>
           </div>
+        </div>
+        <div class="button">
+          <button>Convert</button>
         </div>
       </form>
     </div>
