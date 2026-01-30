@@ -64,4 +64,10 @@ form select,input,button{
 }
 .select-container input{
     border:1px solid gray;
+    border-radius:5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width:60px;
+    max-width:150px;
 }
