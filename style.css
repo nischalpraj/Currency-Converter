@@ -21,3 +21,9 @@ body {
   margin-top: 20px;
 color: #1f2a44;
 }
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
