@@ -21,9 +21,30 @@ body {
   margin-top: 20px;
 color: #1f2a44;
 }
+form select,input,button{
+    border:none;
+    outline:none;
+}
 .dropdown{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.from{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    margin-top:20px;
+    border-radius: 5px;
+    gap:10px;
+}
+.from p{
+    margin-top:10px;
+}
+.from img{
+    max-width:32px;
+}
+.select-container{
+    
 }
