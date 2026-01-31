@@ -41,12 +41,12 @@ button {
   border-radius: 5px;
   gap: 10px;
 }
-.from p {
+.from p,.to p {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 500;
 }
-.from img {
+.from img,.to img {
   max-width: 38px;
 }
 .select-container {
