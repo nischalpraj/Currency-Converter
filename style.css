@@ -75,3 +75,7 @@ button {
   max-width: 150px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.dropdown i{
+  text-align: center;
+  font-size: 40px;
+}
