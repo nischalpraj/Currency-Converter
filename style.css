@@ -97,9 +97,12 @@ button {
   border:none;
 }
 .btn button{
-  min-width:120px;
+  min-width:100px;
+  min-height:30px;
   font-size:16px;
   font-weight:500;
   border-radius:5px;
-  background-color: #fff;
+  background: #2563EB;
+  color: #FFFFFF;
+  cursor:pointer;
 }
