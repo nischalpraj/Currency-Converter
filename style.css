@@ -13,6 +13,7 @@ body {
 .container {
   background-color: #fff;
   min-width: 580px;
+  min-height:300px;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -86,4 +87,19 @@ button {
 }
 .to img{
   margin-left:10px;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  outline:none;
+  border:none;
+}
+.btn button{
+  min-width:120px;
+  font-size:16px;
+  font-weight:500;
+  border-radius:5px;
+  background-color: #fff;
 }
