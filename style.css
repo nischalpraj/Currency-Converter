@@ -13,7 +13,7 @@ body {
 .container {
   background-color: #fff;
   min-width: 580px;
-  min-height:300px;
+  min-height: 300px;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -34,7 +34,8 @@ button {
   align-items: center;
   flex-direction: column;
 }
-.from,.to {
+.from,
+.to {
   display: flex;
   justify-items: center;
   align-content: center;
@@ -42,12 +43,14 @@ button {
   border-radius: 5px;
   gap: 10px;
 }
-.from p,.to p {
+.from p,
+.to p {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 500;
 }
-.from img,.to img {
+.from img,
+.to img {
   max-width: 38px;
 }
 .select-container {
@@ -57,14 +60,20 @@ button {
   gap: 10px;
   margin-top: 10px;
 }
-.select-container select {
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.select-container select {
   border-radius: 5px;
   width: 60px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .select-container input {
   border: 1px solid gray;
@@ -76,32 +85,32 @@ button {
   max-width: 150px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.dropdown i{
+.dropdown i {
   text-align: center;
   font-size: 40px;
-  margin-top:20px;
-  color:#1f2a44;
+  margin-top: 20px;
+  color: #1f2a44;
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:20px;
-  outline:none;
-  border:none;
+  margin-top: 20px;
+  outline: none;
+  border: none;
 }
-.btn button{
-  min-width:100px;
-  min-height:30px;
-  font-size:16px;
-  font-weight:500;
-  border-radius:5px;
-  background: #2563EB;
-  color: #FFFFFF;
-  cursor:pointer;
+.btn button {
+  min-width: 100px;
+  min-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
 }
-.btn button:hover{
-   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+.btn button:hover {
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
   transform: translateY(-2px);
 }
