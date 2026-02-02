@@ -1,0 +1,1 @@
+ const base_url = "https://api.frankfurter.dev/v1/latest";
