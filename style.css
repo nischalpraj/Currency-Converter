@@ -82,12 +82,7 @@ button {
   margin-top:20px;
   color:#1f2a44;
 }
-.to p{
-  margin-left: 20px;
-}
-.to img{
-  margin-left:10px;
-}
+
 .btn{
   display: flex;
   justify-content: center;
