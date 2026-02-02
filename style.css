@@ -13,7 +13,7 @@ body {
 .container {
   background-color: #fff;
   min-width: 580px;
-  min-height: 300px;
+  min-height: 320px;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -42,10 +42,11 @@ button {
   margin-top: 20px;
   border-radius: 5px;
   gap: 10px;
+
 }
 .from p,
 .to p {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 24px;
   font-weight: 500;
 }
@@ -84,6 +85,7 @@ button {
   font-weight: 500;
   min-width: 60px;
   max-width: 150px;
+  height:30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .dropdown i {
