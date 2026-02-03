@@ -3,7 +3,7 @@ const base_url = "https://api.frankfurter.dev/v1/latest";
 const dropdown = document.querySelectorAll(".dropdown select");
 
 for (let select of dropdown) {
-  for ( let currCode in countryList) {
+  for (let currCode in countryList) {
     let newoption = document.createElement("option");
     newoption.innerText = currCode;
     newoption.value = currCode;
@@ -20,8 +20,10 @@ for (let select of dropdown) {
   });
 
   const updateFlag = (element) => {
-    console.log(element);
+    let currCode = element.value;
+    let countryCode = countryList[currCode];
+    let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    let img = element.parentElement.querySelectorAll("img");
+    img.src = newSrc;
   };
-
 }
-
