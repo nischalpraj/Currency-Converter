@@ -7,6 +7,12 @@ for (let select of dropdown) {
     let newoption = document.createElement("option");
     newoption.innerText = currCode;
     newoption.value = currCode;
+    if (select.name == "from" && currCode === "USD") {
+      newoption.selected = "selected";
+    }
+    else if (select.name == "to" && currCode === "NPR") {
+      newoption.selected = "selected";
+    }
     select.append(newoption);
   }
 }
