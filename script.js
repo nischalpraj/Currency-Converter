@@ -16,3 +16,13 @@ for (let select of dropdown) {
     select.append(newoption);
   }
 }
+
+
+select.addEventListener("change", (evt) => {
+  updateFlag(evt.target);
+})
+
+
+const updateFlag = () => {
+
+}
