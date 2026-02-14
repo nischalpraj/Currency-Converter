@@ -30,7 +30,7 @@ for (let select of dropdown) {
 }
 
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (evt) => {
   evt.preventDefault();
   let amount = document.querySelector(".from input").value;
   console.log(amount);
