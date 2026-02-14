@@ -1,7 +1,7 @@
 const base_url = "https://api.frankfurter.dev/v1/latest";
 
 const dropdown = document.querySelectorAll(".dropdown select");
-const btn=document.querySelector("button");
+const btn = document.querySelector("button");
 
 for (let select of dropdown) {
   for (let currCode in countryList) {
@@ -29,9 +29,17 @@ for (let select of dropdown) {
   };
 }
 
-
 btn.addEventListener("click", (evt) => {
   evt.preventDefault();
-  let amount = document.querySelector(".from input").value;
-  console.log(amount);
-})
+
+  let amount = document.querySelector(".from input");
+  let amtval = parseInt(amount.value);
+
+  if (isNaN(amtval) || amtval <= 0) {
+    amtval = 1;
+    amount.value = 1;
+  }
+
+  console.log("Final Amount:", amtval);
+});
+
