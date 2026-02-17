@@ -2,6 +2,8 @@ const base_url = "https://api.frankfurter.dev/v1/latest";
 
 const dropdown = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("button");
+const fromCurr=document.querySelector(".from select");
+const toCurr=document.querySelector(".to select");
 
 for (let select of dropdown) {
   for (let currCode in countryList) {
@@ -39,6 +41,6 @@ btn.addEventListener("click", (evt) => {
     amtval = 1;
     amount.value = 1;
   }
-
-  console.log("Final Amount:", amtval);
+  console.log(fromCurr.value,toCurr.value)
+  const URL = `${base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
 });
