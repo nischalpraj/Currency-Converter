@@ -42,4 +42,3 @@ btn.addEventListener("click", (evt) => {
 
   console.log("Final Amount:", amtval);
 });
-
