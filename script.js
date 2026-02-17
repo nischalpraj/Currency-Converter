@@ -31,7 +31,7 @@ for (let select of dropdown) {
   };
 }
 
-btn.addEventListener("click", (evt) => {
+btn.addEventListener("click", async(evt) => {
   evt.preventDefault();
 
   let amount = document.querySelector(".from input");
@@ -43,4 +43,5 @@ btn.addEventListener("click", (evt) => {
   }
   console.log(fromCurr.value,toCurr.value)
   const URL = `${base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+  let response = await fetch(URL);
 });
