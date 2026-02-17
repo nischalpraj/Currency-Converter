@@ -42,7 +42,7 @@ btn.addEventListener("click", async(evt) => {
     amount.value = 1;
   }
   // console.log(fromCurr.value,toCurr.value)
-  const URL = `${base_url}?base=${fromCurr.value.toLowerCase()}&symbols=${toCurr.value.toLowerCase()}`;
+  const URL = `${base_url}?base=${fromCurr.value}&symbols=${toCurr.value}`;
   let response = await fetch(URL);
   console.log(response);
 });
