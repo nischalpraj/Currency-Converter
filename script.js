@@ -41,7 +41,8 @@ btn.addEventListener("click", async(evt) => {
     amtval = 1;
     amount.value = 1;
   }
-  console.log(fromCurr.value,toCurr.value)
-  const URL = `${base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+  // console.log(fromCurr.value,toCurr.value)
+  const URL = `${base_url}?base=${fromCurr.value.toLowerCase()}&symbols=${toCurr.value.toLowerCase()}`;
   let response = await fetch(URL);
+  console.log(response);
 });
