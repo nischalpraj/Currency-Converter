@@ -1,4 +1,5 @@
-const base_url = "https://api.frankfurter.app/latest";
+const base_url =
+  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
 
 const dropdown = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("button");
@@ -42,8 +43,7 @@ btn.addEventListener("click", async (evt) => {
     amount.value = 1;
   }
   // console.log(fromCurr.value,toCurr.value)
-  const URL = `https://api.frankfurter.dev/v1/latest?from=${fromCurr.value}&to=${toCurr.value}`;
+  const URL = `${base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
   let response = await fetch(URL);
-  let data = await response.json();
-  console.log(data);
+  console.log(response);
 });
