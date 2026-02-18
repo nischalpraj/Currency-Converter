@@ -1,5 +1,4 @@
-const base_url =
-  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
+const base_url = "https://api.exchangerate.host/latest";
 
 const dropdown = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("button");
@@ -43,7 +42,7 @@ btn.addEventListener("click", async (evt) => {
     amount.value = 1;
   }
   // console.log(fromCurr.value,toCurr.value)
-  const URL = `${base_url}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+  const URL = `https://api.exchangerate.host/latest?base=${fromCurr.value}&symbols=${toCurr.value}`;
   let response = await fetch(URL);
   console.log(response);
 });
