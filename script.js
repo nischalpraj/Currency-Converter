@@ -1,4 +1,4 @@
-const base_url = "https://api.frankfurter.dev/v1/latest";
+const base_url = "https://api.frankfurter.app/latest";
 
 const dropdown = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("button");
@@ -42,7 +42,7 @@ btn.addEventListener("click", async (evt) => {
     amount.value = 1;
   }
   // console.log(fromCurr.value,toCurr.value)
-  const URL = `https://api.frankfurter.dev/v1/latest?base=${fromCurr.value}&symbols=${toCurr.value}`;
+  const URL = `https://api.frankfurter.dev/v1/latest?from=${fromCurr.value}&to=${toCurr.value}`;
   let response = await fetch(URL);
   let data = await response.json();
   console.log(data);
